@@ -33,6 +33,7 @@
 ```bash
 git clone https://github.com/your-username/playwright-saucedemo-tests.git
 cd playwright-saucedemo-tests
+```
 
 ---
 
@@ -70,6 +71,7 @@ npx playwright test
 ```bash
 npx playwright test --project=firefox
 npx playwright test --project=webkit
+```
 
 ---
 
