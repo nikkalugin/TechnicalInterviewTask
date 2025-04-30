@@ -1,42 +1,89 @@
 # TechnicalInterviewTask
 
-Цей проект містить автоматизовані тести для UI та API, написані з використанням Playwright та TypeScript.
+Цей проєкт містить автоматизовані UI тести для сайту [Saucedemo](https://www.saucedemo.com/), написані з використанням фреймворку [Playwright](https://playwright.dev/) і мови TypeScript.
 
-## Технології
+---
 
-- Playwright 1.40+
-- TypeScript 5+
-- Node.js 18+
+## ✅ Можливості
 
-## Встановлення
+- Авторизація з коректними та некоректними обліковими даними  
+- Додавання товарів до кошика  
+- Взаємодія з фільтрами сортування  
+- Оформлення замовлення  
+- Перевірка переходів між сторінками  
+- Тести зберігаються у структурованому вигляді  
+- Включає зручну систему запуску та розширювану архітектуру  
 
-1. Переконайтеся, що у вас встановлено Node.js версії 18 або вище
-2. Клонуйте репозиторій:
-   ```bash
-   git clone [repository-url]
-   cd [repository-name]
+---
 
-3. Встановіть залежності:
-    ```bash
-    npm install
+## ⚙️ Передумови
 
-## Структура проекту
+Перед тим, як почати роботу з проєктом, переконайтесь, що у вас встановлено:
 
-project-root/
-├── tests/
-│   ├── ui/                            # UI тести для saucedemo.com
-│   │   └── saucedemoTests.spec.ts     # Тести авторизації
-│   │
-│   └── api/                    # API тести для jsonplaceholder
-│       └── apiTests.spec.ts    # CRUD операції для постів
-│
-│── fixtures
-│    ├── test-data.ts   # фікстури для api тестів
-│
-├── docs/
-│   ├── TEST-CASES-DOCUMENTATION.md        # Документація тест кейсів
-│   └── BUG-REPORT.md                      # Приклад звіту про баг
-│
-├── playwright.config.ts     # Конфігурація Playwright
-├── package.json
-└── README.md
+- **Node.js** (рекомендовано v18 або новіше): https://nodejs.org/  
+- **Git**: https://git-scm.com/  
+- Будь-який текстовий редактор, наприклад [VS Code](https://code.visualstudio.com/)  
+
+---
+
+## 🚀 Початок роботи
+
+### 1. Клонування репозиторію
+
+```bash
+git clone https://github.com/your-username/playwright-saucedemo-tests.git
+cd playwright-saucedemo-tests
+
+### 2. Встановлення залежностей
+
+```bash
+npm install
+
+Це встановить Playwright, TypeScript, і всі інші необхідні пакети, згідно з package.json.
+
+## 🧪 Запуск тестів
+
+### 🔍 Відкриття Playwright Test Runner (UI)
+
+```bash
+npx playwright test --ui
+
+Запустить інтерактивний інтерфейс для вибору і запуску тестів вручну.
+
+### ⚡ Запуск всіх тестів у headless режимі
+
+```bash
+npx playwright test
+
+Це запустить усі тести в headless-браузерах (за замовчуванням Chromium).
+
+### 🌐 Запуск у конкретному браузері
+
+```bash
+npx playwright test --project=firefox
+npx playwright test --project=webkit
+
+## 🧰 Корисні команди
+
+### 📤 Генерація HTML-звіту після тестів
+
+```bash
+npx playwright test --project=firefox
+
+## 🧪 Тест-кейси
+
+Документацію тестів можна знайти у файлі TEST-CASES.md. Вона містить:
+- Назву тесту
+- Опис
+- Передумови
+- Кроки виконання
+- Очікуваний результат
+
+## 🪲 Баг-репорти
+
+Опис знайдених дефектів збережено у BUG-REPORT.md відповідно до шаблону:
+- Назва
+- Кроки відтворення
+- Поточний результат
+- Очікуваний результат
+- Середовище
