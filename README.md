@@ -41,6 +41,7 @@ cd playwright-saucedemo-tests
 
 ```bash
 npm install
+```
 
 Це встановить Playwright, TypeScript, і всі інші необхідні пакети, згідно з package.json.
 
@@ -52,6 +53,7 @@ npm install
 
 ```bash
 npx playwright test --ui
+```
 
 Запустить інтерактивний інтерфейс для вибору і запуску тестів вручну.
 
@@ -61,6 +63,7 @@ npx playwright test --ui
 
 ```bash
 npx playwright test
+```
 
 Це запустить усі тести в headless-браузерах (за замовчуванням Chromium).
 
@@ -81,6 +84,7 @@ npx playwright test --project=webkit
 
 ```bash
 npx playwright test --project=firefox
+```
 
 ---
 
