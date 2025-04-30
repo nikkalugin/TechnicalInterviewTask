@@ -34,12 +34,16 @@
 git clone https://github.com/your-username/playwright-saucedemo-tests.git
 cd playwright-saucedemo-tests
 
+---
+
 ### 2. Встановлення залежностей
 
 ```bash
 npm install
 
 Це встановить Playwright, TypeScript, і всі інші необхідні пакети, згідно з package.json.
+
+---
 
 ## 🧪 Запуск тестів
 
@@ -50,6 +54,8 @@ npx playwright test --ui
 
 Запустить інтерактивний інтерфейс для вибору і запуску тестів вручну.
 
+---
+
 ### ⚡ Запуск всіх тестів у headless режимі
 
 ```bash
@@ -57,11 +63,15 @@ npx playwright test
 
 Це запустить усі тести в headless-браузерах (за замовчуванням Chromium).
 
+---
+
 ### 🌐 Запуск у конкретному браузері
 
 ```bash
 npx playwright test --project=firefox
 npx playwright test --project=webkit
+
+---
 
 ## 🧰 Корисні команди
 
@@ -69,6 +79,8 @@ npx playwright test --project=webkit
 
 ```bash
 npx playwright test --project=firefox
+
+---
 
 ## 🧪 Тест-кейси
 
@@ -78,6 +90,8 @@ npx playwright test --project=firefox
 - Передумови
 - Кроки виконання
 - Очікуваний результат
+
+---
 
 ## 🪲 Баг-репорти
 
