@@ -1,35 +1,42 @@
 # TechnicalInterviewTask
 
-Цей проєкт містить автоматизовані UI тести для сайту [Saucedemo](https://www.saucedemo.com/), написані з використанням фреймворку [Playwright](https://playwright.dev/) і мови TypeScript.
+Цей проект містить автоматизовані тести для UI та API, написані з використанням Playwright та TypeScript.
 
----
+## Технології
 
-## ✅ Можливості
+- Playwright 1.40+
+- TypeScript 5+
+- Node.js 18+
 
-- Авторизація з коректними та некоректними обліковими даними
-- Додавання товарів до кошика
-- Взаємодія з фільтрами сортування
-- Оформлення замовлення
-- Перевірка переходів між сторінками
-- Тести зберігаються у структурованому вигляді
-- Включає зручну систему запуску та розширювану архітектуру
+## Встановлення
 
----
+1. Переконайтеся, що у вас встановлено Node.js версії 18 або вище
+2. Клонуйте репозиторій:
+   ```bash
+   git clone [repository-url]
+   cd [repository-name]
 
-## ⚙️ Передумови
+3. Встановіть залежності:
+    ```bash
+    npm install
 
-Перед тим, як почати роботу з проєктом, переконайтесь, що у вас встановлено:
+## Структура проекту
 
-- **Node.js** (рекомендовано v18 або новіше): https://nodejs.org/
-- **Git**: https://git-scm.com/
-- Будь-який текстовий редактор, наприклад [VS Code](https://code.visualstudio.com/)
-
----
-
-## 🚀 Початок роботи
-
-### 1. Клонування репозиторію
-
-```bash
-git clone https://github.com/your-username/playwright-saucedemo-tests.git
-cd playwright-saucedemo-tests
+project-root/
+├── tests/
+│   ├── ui/                            # UI тести для saucedemo.com
+│   │   └── saucedemoTests.spec.ts     # Тести авторизації
+│   │
+│   └── api/                    # API тести для jsonplaceholder
+│       └── apiTests.spec.ts    # CRUD операції для постів
+│
+│── fixtures
+│    ├── test-data.ts   # фікстури для api тестів
+│
+├── docs/
+│   ├── TEST-CASES-DOCUMENTATION.md        # Документація тест кейсів
+│   └── BUG-REPORT.md                      # Приклад звіту про баг
+│
+├── playwright.config.ts     # Конфігурація Playwright
+├── package.json
+└── README.md
